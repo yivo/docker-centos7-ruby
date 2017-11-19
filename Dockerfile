@@ -3,8 +3,8 @@ FROM centos:7
 # http://bundler.io/man/bundle-config.1.html
 ENV GEM_HOME=/usr/local/rubygems \
     BUNDLE_PATH=/usr/local/rubygems \
-	BUNDLE_SILENCE_ROOT_WARNING=1 \
-	PATH="/usr/local/rubygems/bin:$PATH"
+    BUNDLE_SILENCE_ROOT_WARNING=1 \
+    PATH="/usr/local/rubygems/bin:$PATH"
 
 RUN yum -y update \
  && yum -y install epel-release \

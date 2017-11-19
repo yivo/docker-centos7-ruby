@@ -27,14 +27,19 @@ USER web
 CMD ["bundle", "exec", "rails", "s", "--port=3000", "--binding=0.0.0.0"]
 ```
 
-## How to build
+## How to pull and run
 
 ```
-docker build --rm -t centos7-ruby .
+container=eahome00/centos7-ruby:2.4.2 \
+  && docker pull $container \
+  && docker run -it $container /bin/bash
 ```
 
-## How to run
+## How to build and run
 
 ```
-docker run -it --rm centos7-ruby /bin/bash
+git clone git@github.com:yivo/docker-centos7-ruby.git \
+  && cd docker-centos7-ruby \
+  && docker build --rm -t centos7-ruby . \
+  && docker run -it centos7-ruby /bin/bash
 ```

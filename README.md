@@ -2,11 +2,11 @@
 
 Docker container with CentOS 7 and Ruby.
 
-<a href="https://hub.docker.com/r/eahome00/centos7-ruby/" target="_blank">View on Docker Hub</a>
+[View on Docker Hub](https://hub.docker.com/r/eahome00/centos7-ruby/)
 
 ## Ruby build features
 
-Ruby is compiled with shared libraries enabled and <a href="https://github.com/jemalloc/jemalloc" target="_blank">jemalloc memory allocator</a>.
+Ruby is compiled with shared libraries enabled and [jemalloc memory allocator](https://github.com/jemalloc/jemalloc).
 
 ## Tags
 
